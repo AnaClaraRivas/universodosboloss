@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo dos Bolos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="floating-images">
+            <img src="img/coracao.png" class="img1">
+            <img src="img/bolo.png" class="img2">
+            <img src="img/bolo2.png" class="img3">
+            <img src="img/donut.png" class="img4">
+            <img src="img/bolinho.png" class="img5">
+
+            <img src="img/donut.png" class="img6">
+            <img src="img/bolo3.png" class="img7">
+            <img src="img/biscoito.png" class="img8">
+            <img src="img/coracao.png" class="img9">
+            <img src="img/bolo2.png" class="img10">
+
+            <img src="img/bolo3.png" class="img11">
+            <img src="img/biscoito.png" class="img12">
+            <img src="img/bolo.png" class="img13">
+            <img src="img/donut.png" class="img14">
+            <img src="img/bolinho.png" class="img15">
+
+            <img src="img/bolo.png" class="img16">
+            <img src="img/bolinho.png" class="img17">
+            <img src="img/bolo3.png" class="img18">
+            <img src="img/coracao.png" class="img19">
+            <img src="img/bolo.png" class="img20">
+        </div>
+
+        <div class="hero-content">
+            <h1>Universo dos Bolos</h1>
+            <p>Uma experiência doce e criativa</p>
+            <button>Conheça!</button>
+        </div>
+
+    </section>
+
+    <!-- BOAS VINDAS -->
+    <section class="welcome">
+        <h2>Bem-vindo ao universo dos bolos!</h2>
+        <p>
+            Aqui você vai descobrir receitas incríveis, curiosidades históricas
+            e bolos marcantes na cultura pop.
+        </p>
+        <img src="img/bolobolo.png" class="main-cake">
+    </section>
+
+    <!-- TIPOS -->
+    <!-- TIPOS -->
+    <section class="types">
+        <h2>Existem diversos tipos de bolos!</h2>
+        <p class="types-sub">Qual é sua necessidade no momento?</p>
+
+        <div class="type-card">
+            <img id="cakeImage" src="img/boloaniversario.png">
+            <h3 id="cakeTitle">Bolo de Aniversário</h3>
+            <a href="receitas.html">
+                <button id="cakeButton">Veja</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="reviews">
+
+        <h2 class="reviews-title">Avaliações</h2>
+
+        <div class="reviews-container">
+
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="material-symbols-outlined user-icon">
+                        account_circle
+                    </span>
+                    <h3>Thais Abe</h3>
+                </div>
+
+                <p class="review-text">
+                    O bolo de frutas ficou maravilhoso! Super macio e muito saboroso.
+                    Com certeza farei novamente!
+                </p>
+
+                <a href="receita-frutas.html">
+                    <button>Veja a Receita</button>
+                </a>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="material-symbols-outlined user-icon">
+                        account_circle
+                    </span>
+                    <h3>Ana Clara</h3>
+                </div>
+
+                <p class="review-text">
+                    O bolo de chocolate é simplesmente perfeito!
+                    Fica fofinho e com sabor intenso.
+                </p>
+
+                <a href="receita-chocolate.html">
+                    <button>Veja a Receita</button>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- QUIZ -->
+    <!-- QUIZ -->
+    <section class="quiz">
+
+        <h2>Você sabe dizer se é Cake ou Fake?</h2>
+
+        <div class="quiz-box">
+            <p id="quizProgress">Desafio 1 de 5</p>
+
+            <img id="quizImage" src="img/cakeorfake1.png">
+
+            <div class="quiz-buttons">
+                <button onclick="answerQuiz('bolo')">Bolo</button>
+                <button onclick="answerQuiz('fake')">Fake</button>
+            </div>
+
+            <p id="quizResult"></p>
+            <p id="quizScore"></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Universo dos Bolos</p>
+    </footer>
+
+
+    <script>
+        const cakes = [
+            {
+                image: "img/boloaniversario.png",
+                title: "Bolo de Aniversário"
+            },
+            {
+                image: "img/bolocasamento.png",
+                title: "Bolo de Casamento"
+            },
+            {
+                image: "img/cupcake.png",
+                title: "CupCake"
+            },
+            {
+                image: "img/caseiro.png",
+                title: "Bolo Caseiro"
+            },
+            {
+                image: "img/pote.png",
+                title: "Bolo de Pote"
+            },
+            {
+                image: "img/caneca.png",
+                title: "Bolo de Caneca"
+            }
+        ];
+
+        let index = 0;
+
+        const cakeImage = document.getElementById("cakeImage");
+        const cakeTitle = document.getElementById("cakeTitle");
+
+        function changeCake() {
+            index++;
+            if (index >= cakes.length) {
+                index = 0;
+            }
+
+            cakeImage.src = cakes[index].image;
+            cakeTitle.textContent = cakes[index].title;
+        }
+
+        setInterval(changeCake, 1500);
+
+
+
+        const quizData = [
+            { image: "img/cakeorfake1.png", answer: "bolo" },
+            { image: "img/cakeorfake4.jpg", answer: "fake" },
+            { image: "img/cakeorfake2.jpg", answer: "bolo" },
+            { image: "img/cakeorfake3.jpg", answer: "bolo" },
+            { image: "img/cakeorfake5.jpg", answer: "fake" }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        const quizImage = document.getElementById("quizImage");
+        const quizResult = document.getElementById("quizResult");
+        const quizScore = document.getElementById("quizScore");
+        const quizProgress = document.getElementById("quizProgress");
+
+        function answerQuiz(choice) {
+
+            if (choice === quizData[currentQuestion].answer) {
+                score++;
+                quizResult.textContent = "Acertou!";
+                quizResult.style.color = "green";
+            } else {
+                quizResult.textContent = "Errou!";
+                quizResult.style.color = "red";
+            }
+
+            setTimeout(() => {
+                currentQuestion++;
+
+                if (currentQuestion < quizData.length) {
+                    quizImage.src = quizData[currentQuestion].image;
+                    quizProgress.textContent = `Desafio ${currentQuestion + 1} de 5`;
+                    quizResult.textContent = "";
+                } else {
+                    quizImage.style.display = "none";
+                    document.querySelector(".quiz-buttons").style.display = "none";
+                    quizProgress.textContent = "Quiz Finalizado!";
+                    quizScore.textContent = `Sua pontuação: ${score} / 5`;
+                }
+
+            }, 1000);
+        }
+
+    </script>
+
+</body>
+
+</html>

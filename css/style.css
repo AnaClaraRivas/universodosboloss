@@ -1,0 +1,468 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F8D8C9;
+    color: #6b2d2d;
+    overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: #e8cbb8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    margin-top: 10px;
+}
+
+.hero-content button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #c94c4c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ================= IMAGENS PATTERN ================= */
+
+.floating-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.floating-images img {
+    position: absolute;
+    width: 250px;
+    opacity: 0.95;
+}
+
+/* Linha 1 */
+.img1 {
+    top: 5%;
+    left: 5%;
+}
+
+.img2 {
+    top: 5%;
+    left: 25%;
+}
+
+.img3 {
+    top: 5%;
+    left: 45%;
+}
+
+.img4 {
+    top: 5%;
+    left: 65%;
+}
+
+.img5 {
+    top: 5%;
+    left: 85%;
+}
+
+/* Linha 2 */
+.img6 {
+    top: 25%;
+    left: 10%;
+}
+
+.img7 {
+    top: 25%;
+    left: 20%;
+}
+
+.img8 {
+    top: 25%;
+    left: 50%;
+}
+
+.img9 {
+    top: 25%;
+    left: 70%;
+}
+
+.img10 {
+    top: 25%;
+    left: 90%;
+}
+
+/* Linha 3 */
+.img11 {
+    top: 55%;
+    left: 5%;
+}
+
+.img12 {
+    top: 55%;
+    left: 25%;
+}
+
+.img13 {
+    top: 65%;
+    left: 45%;
+}
+
+.img14 {
+    top: 55%;
+    left: 65%;
+}
+
+.img15 {
+    top: 55%;
+    left: 85%;
+}
+
+/* Linha 4 */
+.img16 {
+    top: 75%;
+    left: 15%;
+}
+
+.img17 {
+    top: 75%;
+    left: 35%;
+}
+
+.img18 {
+    top: 75%;
+    left: 55%;
+}
+
+.img19 {
+    top: 75%;
+    left: 75%;
+}
+
+.img20 {
+    top: 75%;
+    left: 95%;
+}
+
+/* ================= WELCOME ================= */
+
+.welcome {
+    padding: 80px 20px;
+    text-align: center;
+    background: #d96c6c;
+    color: white;
+}
+
+.main-cake {
+    margin-top: 5%;
+    width: 40%;
+}
+
+/* ================= TYPES ================= */
+
+.types {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.type-card img {
+    width: 200px;
+}
+
+.type-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #c94c4c;
+    color: white;
+    border-radius: 20px;
+}
+
+#cakeImage {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 30%;
+}
+
+/* ================= REVIEWS ================= */
+
+/* REVIEWS */
+.reviews {
+    background-color: #E46B70;
+    padding: 3%;
+    text-align: center;
+}
+
+.reviews-title {
+    color: #f8e6da;
+    margin-bottom: 2%;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #e7c7b5;
+    width: 400px;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 0px #9e2f2f;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.user-icon {
+    font-size: 50px;
+    color: #b03030;
+}
+
+.review-card h3 {
+    color: #b03030;
+    margin: 0;
+}
+
+.review-text {
+    color: #7a1f1f;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.review-card button {
+    background-color: #b03030;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-card button:hover {
+    background-color: #8c2424;
+}
+
+/* ================= QUIZ ================= */
+
+.quiz {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.quiz-box img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.quiz-buttons {
+    margin-top: 20px;
+}
+
+.quiz-buttons button {
+    margin: 0 10px;
+    padding: 12px 25px;
+    border: none;
+    background: #c94c4c;
+    color: white;
+    border-radius: 20px;
+}
+
+.quiz-box {
+    margin-top: 30px;
+    padding: 30px;
+    border: 2px dashed #c94c4c;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#quizImage {
+    width: 300px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+#quizResult {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#quizScore {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #6b2d2d;
+    color: white;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+
+    .floating-images img {
+        width: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .main-cake {
+        width: 180px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+.receitas {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #c94b46;
+}
+
+
+/* TÍTULO */
+.title-section {
+    text-align: center;
+    color: #f8e6da;
+}
+
+.title-section h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.title-section p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* RECEITAS */
+.recipes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px;
+}
+
+.recipe-card {
+    background-color: #e7c7b5;
+    width: 260px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 8px 8px 0px #9e2f2f;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.recipe-card h3 {
+    color: #b03030;
+    margin: 15px 0 5px;
+}
+
+.recipe-card p {
+    color: #b03030;
+    font-size: 14px;
+}
+
+.recipe-card button {
+    margin-top: 15px;
+    background-color: #b03030;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* LOJAS */
+.stores {
+    background-color: #e7c7b5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.stores h2 {
+    color: #b03030;
+    font-size: 40px;
+}
+
+.store-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.store img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.store h3 {
+    color: #b03030;
+}
+
+.store button {
+    background-color: #b03030;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
