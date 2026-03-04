@@ -1,4 +1,4 @@
-/* RESET */
+/* home */
 
 * {
     margin: 0;
@@ -13,9 +13,8 @@ body {
     overflow-x: hidden;
 }
 
-/* ================= HERO ================= */
 
-.hero {
+.secao-destaque {
     position: relative;
     height: 100vh;
     background: #e8cbb8;
@@ -26,20 +25,20 @@ body {
     overflow: hidden;
 }
 
-.hero-content {
+.conteudo-destaque {
     position: relative;
     z-index: 2;
 }
 
-.hero-content h1 {
+.conteudo-destaque h1 {
     font-size: 3rem;
 }
 
-.hero-content p {
+.conteudo-destaque p {
     margin-top: 10px;
 }
 
-.hero-content button {
+.conteudo-destaque button {
     margin-top: 20px;
     padding: 12px 25px;
     background: #c94c4c;
@@ -49,151 +48,90 @@ body {
     cursor: pointer;
 }
 
-/* ================= IMAGENS PATTERN ================= */
-
-.floating-images {
+.imagens-flutuantes {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
 }
 
-.floating-images img {
+.imagens-flutuantes img {
     position: absolute;
     width: 250px;
     opacity: 0.95;
 }
 
-/* Linha 1 */
-.img1 {
-    top: 5%;
-    left: 5%;
-}
 
-.img2 {
-    top: 5%;
-    left: 25%;
-}
+.imagem1 { top: 5%; left: 5%; }
+.imagem2 { top: 5%; left: 25%; }
+.imagem3 { top: 1%; left: 40%; }
+.imagem4 { top: 5%; left: 65%; }
+.imagem5 { top: 5%; left: 85%; }
 
-.img3 {
-    top: 5%;
-    left: 45%;
-}
+.imagem6 { top: 35%; left: 5%; }
+.imagem7 { top: 25%; left: 20%; }
+.imagem8 { top: 10%; left: 50%; }
+.imagem9 { top: 25%; left: 70%; }
+.imagem10 { top: 25%; left: 90%; }
 
-.img4 {
-    top: 5%;
-    left: 65%;
-}
+.imagem11 { top: 55%; left: 5%; }
+.imagem12 { top: 55%; left: 25%; }
+.imagem13 { top: 65%; left: 45%; }
+.imagem14 { top: 55%; left: 65%; }
+.imagem15 { top: 55%; left: 85%; }
 
-.img5 {
-    top: 5%;
-    left: 85%;
-}
+.imagem16 { top: 75%; left: 15%; }
+.imagem17 { top: 75%; left: 35%; }
+.imagem18 { top: 75%; left: 55%; }
+.imagem19 { top: 75%; left: 75%; }
+.imagem20 { top: 75%; left: 95%; }
 
-/* Linha 2 */
-.img6 {
-    top: 25%;
-    left: 10%;
-}
+.imagem21 { top: 75%; right: 90%; }
+.imagem23 { top: 45%; right: 90%; }
+.imagem25 { top: 10%; right: 90%; }
 
-.img7 {
-    top: 25%;
-    left: 20%;
-}
-
-.img8 {
-    top: 25%;
-    left: 50%;
-}
-
-.img9 {
-    top: 25%;
-    left: 70%;
-}
-
-.img10 {
-    top: 25%;
-    left: 90%;
-}
-
-/* Linha 3 */
-.img11 {
-    top: 55%;
-    left: 5%;
-}
-
-.img12 {
-    top: 55%;
-    left: 25%;
-}
-
-.img13 {
-    top: 65%;
-    left: 45%;
-}
-
-.img14 {
-    top: 55%;
-    left: 65%;
-}
-
-.img15 {
-    top: 55%;
-    left: 85%;
-}
-
-/* Linha 4 */
-.img16 {
-    top: 75%;
-    left: 15%;
-}
-
-.img17 {
-    top: 75%;
-    left: 35%;
-}
-
-.img18 {
-    top: 75%;
-    left: 55%;
-}
-
-.img19 {
-    top: 75%;
-    left: 75%;
-}
-
-.img20 {
-    top: 75%;
-    left: 95%;
-}
-
-/* ================= WELCOME ================= */
-
-.welcome {
+.secao-boas-vindas {
     padding: 80px 20px;
     text-align: center;
     background: #d96c6c;
     color: white;
 }
 
-.main-cake {
+.bolo-principal {
     margin-top: 5%;
-    width: 40%;
+    width: 30%;
+    animation: flutuar-suave 6s ease-in-out infinite;
 }
 
-/* ================= TYPES ================= */
+@keyframes flutuar-suave {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
-.types {
+/* TIPOS */
+
+
+.secao-tipos {
     padding: 80px 20px;
     text-align: center;
 }
 
-.type-card img {
+.subtitulo-tipos {
+    margin-top: 10px;
+}
+
+.cartao-tipo img {
     width: 200px;
 }
 
-.type-card button {
+.cartao-tipo button {
     margin-top: 15px;
     padding: 10px 20px;
     border: none;
@@ -208,28 +146,28 @@ body {
     width: 30%;
 }
 
-/* ================= REVIEWS ================= */
+/* AVALIAÇÕES */
 
-/* REVIEWS */
-.reviews {
+
+.secao-avaliacoes {
     background-color: #E46B70;
     padding: 3%;
     text-align: center;
 }
 
-.reviews-title {
+.titulo-avaliacoes {
     color: #f8e6da;
     margin-bottom: 2%;
 }
 
-.reviews-container {
+.container-avaliacoes {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
 
-.review-card {
+.cartao-avaliacao {
     background-color: #e7c7b5;
     width: 400px;
     padding: 30px;
@@ -238,74 +176,61 @@ body {
     text-align: left;
 }
 
-.review-header {
+.cabecalho-avaliacao {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
 }
 
-.user-icon {
+.icone-usuario {
     font-size: 50px;
     color: #b03030;
 }
 
-.review-card h3 {
+.cartao-avaliacao h3 {
     color: #b03030;
     margin: 0;
 }
 
-.review-text {
+.texto-avaliacao {
     color: #7a1f1f;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.review-card button {
-    background-color: #b03030;
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+/* QUIZ */
 
-.review-card button:hover {
-    background-color: #8c2424;
-}
 
-/* ================= QUIZ ================= */
-
-.quiz {
+.secao-quiz {
     padding: 80px 20px;
     text-align: center;
 }
 
-.quiz-box img {
+.caixa-quiz {
+    margin-top: 30px;
+    padding: 30px;
+    border: 2px dashed #c94c4c;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.caixa-quiz img {
     width: 250px;
     border-radius: 20px;
 }
 
-.quiz-buttons {
+.botoes-quiz {
     margin-top: 20px;
 }
 
-.quiz-buttons button {
+.botoes-quiz button {
     margin: 0 10px;
     padding: 12px 25px;
     border: none;
     background: #c94c4c;
     color: white;
     border-radius: 20px;
-}
-
-.quiz-box {
-    margin-top: 30px;
-    padding: 30px;
-    border: 2px dashed #c94c4c;
-    border-radius: 20px;
-    display: inline-block;
 }
 
 #quizImage {
@@ -325,68 +250,71 @@ body {
     font-size: 1.3rem;
 }
 
-/* ================= FOOTER ================= */
 
-footer {
+.rodape {
     padding: 20px;
     text-align: center;
     background: #6b2d2d;
     color: white;
 }
 
-/* ================= RESPONSIVO ================= */
+
+/* RESPONSIVO */
 
 @media (max-width: 768px) {
 
-    .floating-images img {
+    .imagens-flutuantes img {
         width: 60px;
     }
 
-    .hero-content h1 {
+    .conteudo-destaque h1 {
         font-size: 2rem;
     }
 
-    .main-cake {
+    .bolo-principal {
         width: 180px;
     }
 
-    .card {
+    .cartao-avaliacao {
         width: 90%;
     }
 }
 
 
+/* RECEITAS */
 
-
-
-
-
-
-.receitas {
+.pagina-receitas {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #c94b46;
 }
 
+.botao-voltar {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 18px;
+    background-color: #e7c7b5;
+    color: #b03030;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
 
-/* TÍTULO */
-.title-section {
+.secao-titulo {
     text-align: center;
     color: #f8e6da;
 }
 
-.title-section h1 {
-    font-size: 48px;
-    margin: 0;
+.secao-titulo-principal {
+    margin-top: 5%;
+    text-align: center;
+    color: #f8e6da;
 }
 
-.title-section p {
-    font-size: 22px;
-    margin-top: 10px;
-}
+/* CARDS RECEITAS */
 
-/* RECEITAS */
-.recipes {
+.container-receitas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -394,7 +322,7 @@ footer {
     padding: 50px;
 }
 
-.recipe-card {
+.cartao-receita {
     background-color: #e7c7b5;
     width: 260px;
     padding: 20px;
@@ -403,22 +331,22 @@ footer {
     box-shadow: 8px 8px 0px #9e2f2f;
 }
 
-.recipe-card img {
+.cartao-receita img {
     width: 100%;
     border-radius: 15px;
 }
 
-.recipe-card h3 {
+.cartao-receita h3 {
     color: #b03030;
     margin: 15px 0 5px;
 }
 
-.recipe-card p {
+.cartao-receita p {
     color: #b03030;
     font-size: 14px;
 }
 
-.recipe-card button {
+.cartao-receita button {
     margin-top: 15px;
     background-color: #b03030;
     color: white;
@@ -429,18 +357,19 @@ footer {
 }
 
 /* LOJAS */
-.stores {
+
+.secao-lojas {
     background-color: #e7c7b5;
     padding: 60px 20px;
     text-align: center;
 }
 
-.stores h2 {
+.secao-lojas h2 {
     color: #b03030;
     font-size: 40px;
 }
 
-.store-container {
+.container-lojas {
     display: flex;
     justify-content: center;
     gap: 80px;
@@ -448,17 +377,18 @@ footer {
     flex-wrap: wrap;
 }
 
-.store img {
+.loja img {
     width: 100%;
     height: 150px;
     border-radius: 50%;
 }
 
-.store h3 {
+.loja h3 {
     color: #b03030;
 }
 
-.store button {
+.loja button {
+    margin-top: 5%;
     background-color: #b03030;
     color: white;
     border: none;

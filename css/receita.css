@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Georgia, serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #c94b46;
 }
 
@@ -13,7 +13,7 @@ body {
     box-shadow: 10px 10px 0px #9e2f2f;
 }
 
-.back {
+.voltar {
     text-decoration: none;
     color: #b03030;
     font-weight: bold;
@@ -37,12 +37,13 @@ h1 {
     color: #b03030;
 }
 
-.ingredients h2,
-.preparation h2 {
+.ingredientes h2,
+.preparação h2 {
     color: #b03030;
 }
 
-ul, ol {
+ul,
+ol {
     color: #7a1f1f;
     line-height: 1.8;
 }
